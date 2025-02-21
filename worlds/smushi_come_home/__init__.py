@@ -3,6 +3,9 @@ from typing import List, Mapping, Any, Dict
 from worlds.AutoWorld import World, WebWorld
 from BaseClasses import MultiWorld, Tutorial, ItemClassification, Region
 
+from .Items import SmushiItem, item_data_table
+from .Options import SmushiOptions
+
 
 class SmushiWebWorld(WebWorld):
     theme = "grassFlowers"
@@ -23,10 +26,10 @@ class SmushiWorld(World):
 
     game = "Smushi Come Home"
     web = SmushiWebWorld
-    # options = SmushiOptions
-    # options_dataclass = SmushiOptions
+    options = SmushiOptions
+    options_dataclass = SmushiOptions
 
-    # item_name_to_id = {name: data.code for name, data in item_data_table.items()}
+    item_name_to_id = {name: data.code for name, data in item_data_table.items()}
     # location_name_to_id = {name: data.address for name, data in location_data_table.items()}
 
     def generate_early(self) -> None:
@@ -36,7 +39,8 @@ class SmushiWorld(World):
         pass
 
     def create_item(self, name: str) -> "SmushiItem":
-        pass
+        data = item_data_table[name]
+        return SmushiItem(name, data.classification, data.code, self.player)
 
     def create_items(self) -> None:
         pass
