@@ -15,9 +15,9 @@ class Goal(Choice):
 
 class SplitExplorerTools(Toggle):
     """
-    If enabled, the explorer tools will be split into the Leaf and Rusty Hook
+    If enabled, the Tools of the Explorer will be split into the Leaf and Rusty Hook
     """
-    display_name = "Split Explorer Tools"
+    display_name = "Split Tools of the Explorer"
 
 
 class CrystalSanity(Toggle):
@@ -38,8 +38,8 @@ class MushroomSanity(Toggle):
 
 @dataclass
 class SmushiOptions(PerGameCommonOptions):
-    goal: Goal
+    # goal: Goal
     split_tools: SplitExplorerTools
-    crystal_sanity: CrystalSanity
-    mushroom_sanity: MushroomSanity
+    # crystal_sanity: CrystalSanity
+    # mushroom_sanity: MushroomSanity
 
