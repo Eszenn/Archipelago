@@ -34,8 +34,8 @@ def set_common_rules(world: "SmushiWorld", player:int):
     set_rule(world.get_location("Pink Flower Shrine"), lambda state: can_climb(player, state) and state.has("Blade of Power", player))
 
     # Myrtle Pools
-    set_rule(world.get_location("Ancient Relic 1"), lambda state: can_climb(player, state) and state.has("Mining Tool", player))
-    set_rule(world.get_location("Ancient Relic 2"), lambda state: can_climb(player, state) and can_glide(player, state) and state.has("Mining Tool", player))
+    set_rule(world.get_location("Ancient Relic 1"), lambda state: can_climb(player, state) and can_glide(player, state) and state.has("Mining Tool", player))
+    set_rule(world.get_location("Ancient Relic 2"), lambda state: can_climb(player, state) and state.has("Mining Tool", player))
     set_rule(world.get_location("Return the Ancient Relics"), lambda state: state.has("Ancient Relic", player, 2))
     set_rule(world.get_location("Blueberry from Chillin"), lambda state: state.has("Mining Tool", player))  # Tentative requirement - needs verification
     set_rule(world.get_location("Forest Wisp on Stump"), lambda state: can_climb(player, state) and can_glide(player, state))
