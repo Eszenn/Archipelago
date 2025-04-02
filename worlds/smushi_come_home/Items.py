@@ -39,48 +39,53 @@ task_items = {
     "Sacred Orb": SmushiItemData(21, ItemClassification.progression),
     "Secret Opener": SmushiItemData(22, ItemClassification.progression),
     # "Sacred Streamer": SmushiItemData(23, ItemClassification.progression, 4),
+    # Don't forget to put the rings here
+
+
+
+
 }
 
 upgrades = {
-    "Spore of Energy": SmushiItemData(24, ItemClassification.progression, 7),
-    "Essence of Wind": SmushiItemData(25, ItemClassification.useful, 5),
-    # "Super Spore": SmushiItemData(26, ItemClassification.useful),
-    "Super Essence": SmushiItemData(27, ItemClassification.useful),
+    "Spore of Energy": SmushiItemData(29, ItemClassification.progression, 7),
+    "Essence of Wind": SmushiItemData(30, ItemClassification.useful, 5),
+    # "Super Spore": SmushiItemData(31, ItemClassification.useful),
+    "Super Essence": SmushiItemData(32, ItemClassification.useful),
 }
 
 augmenters = {
-    "Purple Augmenter": SmushiItemData(28),
-    "Strawberry Augmenter": SmushiItemData(29),
-    "Flower Augmenter": SmushiItemData(30),
-    "Secret Augmenter": SmushiItemData(31),
-    "Verdant Augmenter": SmushiItemData(32),
-    "Pelagic Augmenter": SmushiItemData(33),
-    "Honey Augmenter": SmushiItemData(34),
-    "Sparkle Augmenter": SmushiItemData(35),
-    "Clavaria Augmenter": SmushiItemData(36),
-    "Ink Augmenter": SmushiItemData(37),
-    # "Sharp Augmenter": SmushiItemData(38),
-    # "Precious Augmenter": SmushiItemData(39),
-    # "Rainbow Augmenter": SmushiItemData(40),
-    # "Veiled Augmenter": SmushiItemData(41),
-    # "Sacred Augmenter": SmushiItemData(42),
+    "Purple Augmenter": SmushiItemData(33),
+    "Strawberry Augmenter": SmushiItemData(34),
+    "Flower Augmenter": SmushiItemData(35),
+    "Secret Augmenter": SmushiItemData(36),
+    "Verdant Augmenter": SmushiItemData(37),
+    "Pelagic Augmenter": SmushiItemData(38),
+    "Honey Augmenter": SmushiItemData(39),
+    "Sparkle Augmenter": SmushiItemData(40),
+    "Clavaria Augmenter": SmushiItemData(41),
+    "Ink Augmenter": SmushiItemData(42),
+    # "Sharp Augmenter": SmushiItemData(43),
+    # "Precious Augmenter": SmushiItemData(44),
+    # "Rainbow Augmenter": SmushiItemData(45),
+    # "Veiled Augmenter": SmushiItemData(46),
+    # "Sacred Augmenter": SmushiItemData(47),
 }
 
 crystal_rewards = {
-    "Green Crystal x20": SmushiItemData(43),
-    "Green Crystal x30": SmushiItemData(44),
+    "Green Crystal x20": SmushiItemData(48),
+    "Green Crystal x30": SmushiItemData(49),
 }
 
 crystal_rocks = {
-    "Green Crystal x3": SmushiItemData(45, ),  # Some amount of these
-    "Green Crystal x4": SmushiItemData(46, ),  # Some amount of these
-    "Green Crystal x6": SmushiItemData(47, ),  # Some amount of these
-    "Purple Crystal x4": SmushiItemData(48)
+    "Green Crystal x3": SmushiItemData(50, ),  # Some amount of these
+    "Green Crystal x4": SmushiItemData(51, ),  # Some amount of these
+    "Green Crystal x6": SmushiItemData(52, ),  # Some amount of these
+    "Purple Crystal x4": SmushiItemData(53)
 }
 
 filler_items = {
-    "Green Crystal": SmushiItemData(49),
-    "Purple Crystal": SmushiItemData(50)
+    "Green Crystal": SmushiItemData(54),
+    "Purple Crystal": SmushiItemData(55)
 }
 
 item_data_table = {
